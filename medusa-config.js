@@ -82,7 +82,18 @@ const projectConfig = {
 
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
-  projectConfig,
-  plugins,
-  modules,
+  projectConfig: {
+    // other project configuration
+  },
+  plugins: [
+    // other plugins
+  ],
+  db: {
+    type: "postgres",
+    host: "postgredb.cvuikacmiw2x.ap-south-1.rds.amazonaws.com",
+    port: 5432,
+    username: "Garry",
+    password: "Ashu2929",
+    database: "postgredb",
+  },
 };
