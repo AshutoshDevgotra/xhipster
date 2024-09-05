@@ -7,6 +7,10 @@ if (process.env.NODE_ENV !== `test`) {
 }
 
 module.exports = {
-  presets: [["babel-preset-medusa-package"], ["@babel/preset-typescript"]],
+
+  "presets": ["@babel/preset-env"]
+
+
+  presets: [["babel-preset-medusa-package"], ["@babel/preset-env"]["@babel/preset-typescript"]]
   ignore,
 }
